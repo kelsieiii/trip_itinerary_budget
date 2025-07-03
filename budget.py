@@ -5,8 +5,23 @@ import numpy as np
 import re, json, time, os
 import openai
 
-# Read key from environment
-openai.api_key = os.getenv("OPENAI_API_KEY")
+def _load_openai_key():
+    # 1) Try Streamlit secrets (when run under Streamlit Cloud / streamlit_app.py)
+    try:
+        import streamlit as _st
+        key = _st.secrets.get("OPENAI_API_KEY", None)
+        if key:
+            openai.api_key = key
+            return
+    except ImportError:
+        pass
+
+    # 2) Fallback: environment variable for local CLI usage
+    openai.api_key = os.getenv("OPENAI_API_KEY")
+
+# initialize once on import
+_load_openai_key()
+
 
 # Constants
 GUIDES             = 1
