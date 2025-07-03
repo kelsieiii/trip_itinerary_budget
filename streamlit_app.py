@@ -3,8 +3,7 @@ import pandas as pd
 import openai
 import os
 
-import streamlit as st, openai
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = "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"
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # ── Import your three scripts as modules ────────────────────────────────────
