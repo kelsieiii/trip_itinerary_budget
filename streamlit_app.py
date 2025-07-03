@@ -74,6 +74,10 @@ st.success("✅ Budget calculated")
 st.subheader("Budget Preview")
 st.dataframe(budget_df.head(5))
 
+# Display the grand‐total right here
+grand_total = budget_df["Total (RMB)"].sum()
+st.markdown(f"**🎉 Grand Total Budget: RMB {grand_total:,.2f}**")
+
 # ── 5) Download buttons ──────────────────────────────────────────────────────
 st.markdown("---")
 col1, col2 = st.columns(2)
