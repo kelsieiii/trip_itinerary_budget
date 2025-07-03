@@ -6,7 +6,6 @@ import time
 import os
 from datetime import datetime, timedelta
 
-openai.api_key = os.getenv("OPENAI_API_KEY", None)
 
 def make_prompt(row) -> str:
     """
