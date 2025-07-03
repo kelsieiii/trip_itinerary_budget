@@ -4,7 +4,9 @@ import openai
 import os
 
 # Load OpenAI key from Streamlit secrets
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+from streamlit import secrets
+
+openai.api_key = secrets["OPENAI_API_KEY"]
 
 # ── Import your three scripts as modules ────────────────────────────────────
 from cleaning import clean_csv
