@@ -70,13 +70,10 @@ with st.spinner("💰 Calculating budget…"):
     budget_df = calculate_budget(itin_df)
 st.success("✅ Budget calculated")
 
-# Show a peek
+# Show
 st.subheader("Budget Preview")
 st.dataframe(budget_df.head(50))
 
-# Display the grand‐total right here
-grand_total = budget_df["Total (RMB)"].sum()
-st.markdown(f"**🎉 Grand Total Budget: RMB {grand_total:,.2f}**")
 
 # ── 5) Download buttons ──────────────────────────────────────────────────────
 st.markdown("---")
