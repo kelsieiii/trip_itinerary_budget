@@ -1,9 +1,10 @@
-import streamlit as st
+# import streamlit as st
 import pandas as pd
 import openai
 import os
 
-# ── If you insist on hard-coding your key (internal use only!) ───────────────
+import streamlit as st, openai
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # ── Import your three scripts as modules ────────────────────────────────────
