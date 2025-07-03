@@ -9,8 +9,7 @@ from streamlit import secrets
 openai.api_key = secrets["OPENAI_API_KEY"]
 
 # ** DEBUG **
-# st.write("🔑 API key prefix:", openai.api_key[:5], "...", 
-         "length:", len(openai.api_key))
+# st.write("🔑 API key prefix:", openai.api_key[:5], "...", "length:", len(openai.api_key))
 
 # ── Import your three scripts as modules ────────────────────────────────────
 from cleaning import clean_csv
