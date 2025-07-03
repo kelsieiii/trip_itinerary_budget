@@ -72,7 +72,7 @@ st.success("✅ Budget calculated")
 
 # Show a peek
 st.subheader("Budget Preview")
-st.dataframe(budget_df.head(5))
+st.dataframe(budget_df.head(50))
 
 # Display the grand‐total right here
 grand_total = budget_df["Total (RMB)"].sum()
