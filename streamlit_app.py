@@ -9,7 +9,7 @@ from streamlit import secrets
 openai.api_key = secrets["OPENAI_API_KEY"]
 
 # ** DEBUG **
-st.write("🔑 API key prefix:", openai.api_key[:5], "...", 
+# st.write("🔑 API key prefix:", openai.api_key[:5], "...", 
          "length:", len(openai.api_key))
 
 # ── Import your three scripts as modules ────────────────────────────────────
@@ -26,7 +26,7 @@ st.set_page_config(
 
 # ── Sidebar with instructions ───────────────────────────────────────────────
 with st.sidebar:
-    st.title("🏷️ Quick Start")
+    st.title("🏷️ How to use")
     st.markdown("""
     1. Upload your **raw** trip CSV  
     2. Wait while we clean, plan & cost it  
