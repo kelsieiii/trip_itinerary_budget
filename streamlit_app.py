@@ -21,7 +21,7 @@ from budget import calculate_budget
 # ── Streamlit page config ───────────────────────────────────────────────────
 st.set_page_config(
     page_title="Trip Itinerary & Budget Generator",
-    layout="centered",
+    layout="wide",
     initial_sidebar_state="auto"
 )
 
