@@ -53,7 +53,7 @@ st.success("✅ Data cleaned")
 
 # Show a peek
 st.subheader("Cleaned Data Preview")
-st.dataframe(cleaned_df.head(5))
+st.dataframe(cleaned_df.head(5),use_container_width=True)
 
 # ── 3) Generate the itinerary ────────────────────────────────────────────────
 with st.spinner("✈️ Generating itinerary… (this may take 30–60s)"):
@@ -62,7 +62,7 @@ st.success("✅ Itinerary generated")
 
 # Show a peek
 st.subheader("Itinerary Preview")
-st.dataframe(itin_df.head(5))
+st.dataframe(itin_df[['itinerary']],use_container_width=True)
 
 # ── 4) Calculate the budget ──────────────────────────────────────────────────
 with st.spinner("💰 Calculating budget…"):
@@ -71,7 +71,7 @@ st.success("✅ Budget calculated")
 
 # Show
 st.subheader("Budget Preview")
-st.dataframe(budget_df.head(50))
+st.dataframe(budget_df.head(100),use_container_width=True)
 
 
 # ── 5) Download buttons ──────────────────────────────────────────────────────
