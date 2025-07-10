@@ -8,6 +8,8 @@ from streamlit import secrets
 
 openai.api_key = secrets["OPENAI_API_KEY"]
 
+st.set_page_config(layout="wide")  # <- forces the app to use the full width of the screen
+
 # ** DEBUG **
 # st.write("🔑 API key prefix:", openai.api_key[:5], "...", "length:", len(openai.api_key))
 
