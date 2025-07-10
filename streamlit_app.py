@@ -64,7 +64,8 @@ st.success("✅ Itinerary generated")
 
 # Show a peek
 st.subheader("Itinerary Preview")
-st.dataframe(itin_df[['itinerary']],use_container_width=True)
+for idx, row in itin_df.iterrows():
+    st.markdown(f"**Day {idx + 1}:**<br>{row['itinerary']}", unsafe_allow_html=True)
 
 # ── 4) Calculate the budget ──────────────────────────────────────────────────
 with st.spinner("💰 Calculating budget…"):
