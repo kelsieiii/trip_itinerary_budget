@@ -10,7 +10,7 @@ from math import ceil
 FIXED_HOTEL_RATE   = 450    # RMB / room-night
 BUS_RATE_PER_DAY   = 1500   # RMB / day
 MEAL_RATE          = 150    # RMB / meal
-TRANSFER_RATE      = 500    # RMB / person-transfer
+TRANSFER_RATE      = 950    # RMB / person-transfer
 
 # 1) Split places helper (reused)
 def split_places(s: str) -> list[str]:
