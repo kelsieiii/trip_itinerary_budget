@@ -37,29 +37,29 @@ This tool helps you **generate multi-city trip itineraries and detailed budgets*
 
 The system automatically calculates **a detailed trip budget** based on the group size, trip length, and destination details. Here's how:
 
-### ✅ 1. Hotel Costs
+### 1. Hotel Costs
 - 2 students share 1 room
 - Each teacher gets their own room
 - **Rate:** ¥450 RMB per room per night
 
-### ✅ 2. Meal Costs
+### 2. Meal Costs
 - Everyone eats 2 meals per day (lunch + dinner)
 - **Rate:** ¥150 RMB per meal per person
 
-### ✅ 3. Attraction Tickets
+### 3. Attraction Tickets
 - LLM (ChatGPT) estimates typical ticket prices per place
 - Student and adult prices are calculated separately
 - If free, it's listed as ¥0
 
-### ✅ 4. Bus Rental
+### 4. Bus Rental
 - One bus rented per day of the trip
 - **Rate:** ¥1,500 RMB per day per bus
 
-### ✅ 5. Inter-City Transfers
+### 5. Inter-City Transfers
 - ¥950 RMB per person for each city-to-city transfer
 - Automatically counts the number of hops between cities
 
-### ✅ 6. Total in RMB and USD
+### 6. Total in RMB and USD
 - All costs are summed in **RMB**
 - Also shown in **USD** using a fixed rate:
 > 💱 **1 USD = 7.2 RMB**
