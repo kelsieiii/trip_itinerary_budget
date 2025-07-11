@@ -166,11 +166,20 @@ def calculate_budget(df: pd.DataFrame) -> pd.DataFrame:
 
     # Assemble and append GRAND TOTAL row
     detailed = pd.DataFrame(line_items)
-    grand    = detailed['Total (RMB)'].sum()
+
+    # Fixed exchange rate
+    EXCHANGE_RATE = 7.2
+    detailed['Total (USD)'] = detailed['Total (RMB)'] / EXCHANGE_RATE
+
+    grand_rmb = detailed['Total (RMB)'].sum()
+    grand_usd = detailed['Total (USD)'].sum()
+
     total_row = {
-        "City/Trip":"GRAND TOTAL","Category":"","Item":"","Unit":"",
-        "Quantity":"","Unit Price (RMB)":"","Total (RMB)":grand
-    }
+        "City/Trip": "GRAND TOTAL", "Category": "", "Item": "", "Unit": "",
+        "Quantity": "", "Unit Price (RMB)": "", "Total (RMB)": grand_rmb,
+        "Total (USD)": grand_usd
+     }
+
     detailed = pd.concat([detailed, pd.DataFrame([total_row])], ignore_index=True)
     return detailed
 
