@@ -26,13 +26,21 @@ This tool helps you **generate multi-city trip itineraries and detailed budgets*
 ## 🧾 What You Get
 
 - **Cleaned data preview**
+
+  <img width="1422" height="264" alt="image" src="https://github.com/user-attachments/assets/068972ac-66c0-4e54-aeeb-014a2b19e460" />
+
 - **Detailed daily itinerary**
+
+  <img width="760" height="659" alt="image" src="https://github.com/user-attachments/assets/1eca2c4a-47bb-4dff-98bf-9e72610c859c" />
+
 - **Complete budget** including:
   - Hotels
   - Meals
   - Attraction tickets (using live LLM lookup)
   - Transport (bus + inter-city transfers)
   - Final total cost shown in **USD and RMB**
+  <img width="1420" height="672" alt="image" src="https://github.com/user-attachments/assets/e9e21244-d180-462f-83bb-441d8f36b161" />
+
 
 ---
 
