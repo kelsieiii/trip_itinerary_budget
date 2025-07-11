@@ -2,6 +2,9 @@
 
 This tool helps you **generate multi-city trip itineraries and detailed budgets** based on a simple CSV submission.  
 
+<img width="1817" height="620" alt="image" src="https://github.com/user-attachments/assets/9954578c-ef22-4807-b626-15fa1207ed60" />
+
+
 ---
 
 ## 🚀 How to Use (Streamlit App)
