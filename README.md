@@ -8,7 +8,7 @@ This tool helps you **generate multi-city trip itineraries and detailed budgets*
 
 1. **Go to the web app**: [Click here to open](https://tripitinerarybudget.streamlit.app/)  
 2. **Upload your raw CSV file**
-   - It should contain fields like `firstName`, `lastName`, `Cities`, and `Placesbycity` (example format provided below)
+   - It should contain fields like `firstName`, `lastName`, `Cities`, and `Placesbycity`
    - The original csv file is downloaded from Wix "tripsubmissions" collection
 3. Wait a moment while the system:
    - Cleans the data
@@ -65,10 +65,6 @@ The system automatically calculates **a detailed trip budget** based on the grou
 > 💱 **1 USD = 7.2 RMB**
 
 ---
-
-## Input CSV format
-firstName,lastName,email,organization,Cities,Placesbycity,startDate,endDate,studentCount,teacherCount,gradeLevel,submittedAt
-Muyao,Zi,example@email.com,Student,"Beijing,Chengdu,Xi'an","[{""city"":""Beijing"",""places"":[""Great Wall"",""Temple of Heaven""]},{""city"":""Chengdu"",""places"":[""Panda Base""]},{""city"":""Xi'an"",""places"":[""Big Goose Pagoda""]}]",2025-07-11,2025-07-15,30,3,7,2025-06-30
 
 ## Openai API key
 - Itinerary and ticket pricing rely on the OpenAI API.
