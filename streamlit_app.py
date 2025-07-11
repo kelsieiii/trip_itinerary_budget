@@ -75,7 +75,8 @@ st.success("✅ Budget calculated")
 # Show
 st.subheader("Budget Preview")
 st.dataframe(budget_df.head(100),use_container_width=True)
-
+usd_total = budget_df[budget_df["City/Trip"] == "GRAND TOTAL"]["Total (USD)"].values[0]
+st.markdown(f"### 🧾 Total Estimated Cost in USD: **${usd_total:,.2f}**")
 
 # ── 5) Download buttons ──────────────────────────────────────────────────────
 st.markdown("---")
