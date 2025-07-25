@@ -40,7 +40,8 @@ This tool helps you **generate multi-city trip itineraries and detailed budgets*
   - Attraction tickets (using live LLM lookup)
   - Transport (bus + inter-city transfers)
   - Final total cost shown in **USD and RMB**
-  <img width="1131.2" height="623.89" alt="image" src="https://github.com/user-attachments/assets/fd300321-826a-4ab9-ba70-10b84052e89d" />
+  <img width="1305" height="820" alt="image" src="https://github.com/user-attachments/assets/d9f527ad-ad69-422f-9991-adcb0ed3452c" />
+
 
 
 
