@@ -13,7 +13,7 @@ This tool helps you **generate multi-city trip itineraries and detailed budgets*
 2. **Upload your raw CSV file**
    - It should contain fields like `firstName`, `lastName`, `Cities`, and `Placesbycity`
    - The original csv file is downloaded from Wix "tripsubmissions" collection
-   - The example of the original csv file is in the repo. It should only contain one row at a time.
+   - The example of the original csv file is in the repo (input_file_example_tripsubmissions.csv). It should only contain one row at a time.
 3. Wait a moment while the system:
    - Cleans the data
    - Generates the trip itinerary
@@ -75,13 +75,13 @@ The system automatically calculates **a detailed trip budget** based on the grou
 ### 6. Total in RMB and USD
 - All costs are summed in **RMB**
 - Also shown in **USD** using a fixed rate:
-> 💱 **1 USD = 7.2 RMB**
+> **1 USD = 7.2 RMB**
 
 ---
 
 ## Openai API key
 - Itinerary and ticket pricing rely on the OpenAI API.
-- Make sure to set your OpenAI API key via Streamlit secrets.
+- Make sure to set your OpenAI API key via Streamlit settings secrets.
   OPENAI_API_KEY = "sk-..."
 
 
