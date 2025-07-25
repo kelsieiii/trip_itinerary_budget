@@ -87,6 +87,10 @@ def calculate_budget(df: pd.DataFrame) -> pd.DataFrame:
     TCHR = int(df.loc[0, 'teacher_count'])
     PEOPLE = STUD + TCHR
 
+    avg_per_person = total / (row["student_count"] + row["teacher_count"])
+    avg_per_student = total / row["student_count"]
+
+
     # Helper to count transfers from 'cities' column
     def count_transfers(cities_str):
         return max(len(cities_str.split(',')) - 1, 0)
@@ -173,11 +177,16 @@ def calculate_budget(df: pd.DataFrame) -> pd.DataFrame:
 
     grand_rmb = detailed['Total (RMB)'].sum()
     grand_usd = detailed['Total (USD)'].sum()
+    avg_per_person_usd  = grand_usd / PEOPLE
+    avg_per_student_usd = grand_usd / STUD
+
 
     total_row = {
         "City/Trip": "GRAND TOTAL", "Category": "", "Item": "", "Unit": "",
         "Quantity": "", "Unit Price (RMB)": "", "Total (RMB)": grand_rmb,
-        "Total (USD)": grand_usd
+        "Total (USD)": grand_usd，
+        "Avg per Person (USD)": avg_per_person_usd,
+        "Avg per Student (USD)": avg_per_student_usd
      }
 
     detailed = pd.concat([detailed, pd.DataFrame([total_row])], ignore_index=True)
