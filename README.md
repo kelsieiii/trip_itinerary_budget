@@ -13,6 +13,7 @@ This tool helps you **generate multi-city trip itineraries and detailed budgets*
 2. **Upload your raw CSV file**
    - It should contain fields like `firstName`, `lastName`, `Cities`, and `Placesbycity`
    - The original csv file is downloaded from Wix "tripsubmissions" collection
+   - The example of the original csv file is in the repo. It should only contain one row at a time.
 3. Wait a moment while the system:
    - Cleans the data
    - Generates the trip itinerary
