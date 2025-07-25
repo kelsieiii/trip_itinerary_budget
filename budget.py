@@ -184,7 +184,7 @@ def calculate_budget(df: pd.DataFrame) -> pd.DataFrame:
     total_row = {
         "City/Trip": "GRAND TOTAL", "Category": "", "Item": "", "Unit": "",
         "Quantity": "", "Unit Price (RMB)": "", "Total (RMB)": grand_rmb,
-        "Total (USD)": grand_usd，
+        "Total (USD)": grand_usd,
         "Avg per Person (USD)": avg_per_person_usd,
         "Avg per Student (USD)": avg_per_student_usd
      }
