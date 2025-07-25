@@ -80,6 +80,14 @@ usd_row = budget_df.loc[budget_df["City/Trip"].astype(str).str.strip() == "GRAND
 if not usd_row.empty and "Total (USD)" in usd_row.columns:
     usd_total = usd_row["Total (USD)"].values[0]
     st.markdown(f"### 🧾 Total Estimated Cost in USD: **${usd_total:,.2f}**")
+    if "Avg per Person (USD)" in usd_row.columns:
+        avg_per_person = usd_row["Avg per Person (USD)"].values[0]
+        st.markdown(f"### 👥 Avg. Cost per Person (USD): **${avg_per_person:,.2f}**")
+
+    if "Avg per Student (USD)" in usd_row.columns:
+        avg_per_student = usd_row["Avg per Student (USD)"].values[0]
+        st.markdown(f"### 🎓 Avg. Cost per Student Only (USD): **${avg_per_student:,.2f}**")
+
 else:
     st.warning("⚠️ USD total not found in budget.")
 
