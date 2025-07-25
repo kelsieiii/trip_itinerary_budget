@@ -63,6 +63,7 @@ The system automatically calculates **a detailed trip budget** based on the grou
 - LLM (ChatGPT) estimates typical ticket prices per place
 - Student and adult prices are calculated separately
 - If free, it's listed as ¥0
+- Notice: GPT is not 100% accurate.
 
 ### 4. Bus Rental
 - One bus rented per day of the trip
@@ -81,7 +82,7 @@ The system automatically calculates **a detailed trip budget** based on the grou
 
 ## Openai API key
 - Itinerary and ticket pricing rely on the OpenAI API.
-- Make sure to set your OpenAI API key via Streamlit settings secrets.
+- Make sure to set your OpenAI API key via Streamlit settings secrets.(In Streamlit-My apps-Settings-Secrets)
   OPENAI_API_KEY = "sk-..."
 
 
